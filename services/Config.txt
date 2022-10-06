@@ -1,0 +1,13 @@
+01) start zookeeper (path = E:\Files\kafka_2.12-3.3.1\bin\windows)
+zookeeper-server-start.bat E:\Files\kafka_2.12-3.3.1\config\zookeeper.properties
+
+02) start kafka server (path = E:\Files\kafka_2.12-3.3.1\bin\windows)
+kafka-server-start.bat E:\Files\kafka_2.12-3.3.1\config\server.properties
+
+03) Create Topic (path = E:\Files\kafka_2.12-3.3.1\bin\windows)
+kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 -topic himash
+
+04) Consume a message (path = E:\Files\kafka_2.12-3.3.1\bin\windows)
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic javatechie
+
+05) Expose the end-points.
